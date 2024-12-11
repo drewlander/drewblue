@@ -1,6 +1,4 @@
 #!/usr/bin/bash
-curl --retry 3 -Lo /etc/yum.repos.d/starship-fedpra/repo \
-	https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-"${FEDORA_MAJOR_VERSION}"/atim-starship-fedora-"${FEDORA_MAJOR_VERSION}".repo
 curl --retry 3 -Lo /etc/yum.repos.d/hardened-chromium.repo \
 	https://copr.fedorainfracloud.org/coprs/secureblue/hardened-chromium/repo/fedora-"${FEDORA_MAJOR_VERSION}"/secureblue-hardened-chromium-fedora-"${FEDORA_MAJOR_VERSION}".repo
 curl --retry 3 -Lo  /etc/yum.repos.d/bubblejail.repo \
