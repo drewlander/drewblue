@@ -19,5 +19,5 @@ RELEASE="$(rpm -E %fedora)"
 # rpm-ostree install vlc
 
 #### Example for enabling a System Unit File
-./build_files/base_install.sh
+/build_files/base_install.sh
 systemctl enable podman.socket
