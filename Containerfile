@@ -49,7 +49,7 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 COPY / /ctx
 
-COPY /ctx/build.sh /tmp/build.sh
+#COPY /ctx/build.sh /tmp/build.sh
 
 RUN mkdir -p /var/lib/alternatives && \
     /ctx/build_files/base_install.shh && \
