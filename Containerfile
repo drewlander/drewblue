@@ -51,7 +51,7 @@ FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 COPY build.sh /tmp/build.sh
 
 RUN mkdir -p /var/lib/alternatives && \
-    /ctx/build_files/.sh && \
+    /ctx/build_files/base_install.sh && \
     ostree container commit
 ## NOTES:
 # - /var/lib/alternatives is required to prevent failure with some RPM installs
