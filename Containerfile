@@ -52,7 +52,7 @@ COPY / /ctx
 #COPY /ctx/build.sh /tmp/build.sh
 
 RUN mkdir -p /var/lib/alternatives && \
-    /ctx/build_files/base_install.shh && \
+    /ctx/build_files/base_install.sh && \
     ostree container commit
 ## NOTES:
 # - /var/lib/alternatives is required to prevent failure with some RPM installs
