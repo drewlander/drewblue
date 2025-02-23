@@ -20,5 +20,5 @@ RELEASE="$(rpm -E %fedora)"
 dnf install -y tmux neovim emacs
 #### Example for enabling a System Unit File
 
-
+rpm-ostree install libvirt
 systemctl enable podman.socket
