@@ -18,7 +18,7 @@ RELEASE="$(rpm -E %fedora)"
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 dnf install -y @virtualization
-dnf install -y tmux neovim emacs chromium 
+dnf install -y tmux neovim emacs chromium zsh
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
