@@ -50,7 +50,7 @@ FROM quay.io/fedora/fedora-silverblue:41
 ## the following RUN directive does all the things required to run "build.sh" as recommended.
 COPY / /ctx
 
-#COPY /ctx/build.sh /tmp/build.sh
+COPY /ctx/build.sh /tmp/build.sh
 COPY build.sh /tmp/build.sh
 
 #RUN mkdir -p /var/lib/alternatives && \
@@ -58,6 +58,7 @@ COPY build.sh /tmp/build.sh
 #    ostree container commit
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
+    /ctx/build_files/base_install.sh && \
     ostree container commit
 ## NOTES:
 # - /var/lib/alternatives is required to prevent failure with some RPM installs
