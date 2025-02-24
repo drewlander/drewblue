@@ -17,7 +17,7 @@ RELEASE="$(rpm -E %fedora)"
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
-rpm-ostree remove firefox firefox-langpacks
+dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 dnf install -y @virtualization
 dnf install -y @development-tools
 dnf install -y tmux neovim emacs chromium zsh 
@@ -35,28 +35,9 @@ dnf install -y distrobox\
       google-noto-fonts-all\ 
       headsetcontrol\ 
       gnome-text-editor\ 
-      evince
-flatpak install --system-y flathub org.mozilla.firefox \
-        org.signal.Signal\ 
-        com.discordapp.Discord\ 
-        im.riot.Riot\ 
-        org.telegram.desktop\ 
-        org.libreoffice.LibreOffice\ 
-        com.github.tchx84.Flatseal\ 
-        com.mattjakeman.ExtensionManager\ 
-        com.usebottles.bottles\ 
-        net.lutris.Lutris\ 
-        io.github.dvlv.boxbuddyrs\ 
-        org.gnome.Evolution\ 
-        org.videolan.VLC\ 
-        io.mpv.Mpv\ 
-        org.atheme.audacious\ 
-        org.gnome.Builder\ 
-        com.visualstudio.code\ 
-        org.xiphos.Xiphos\ 
-        org.mozilla.Thunderbird\ 
-        org.strawberrymusicplayer.strawberry\ 
-        org.mozilla.firefox
+      evince \
+      firefox
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
