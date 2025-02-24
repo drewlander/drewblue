@@ -23,7 +23,7 @@ dnf install -y mullvad-browser
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 dnf install -y @virtualization
 dnf install -y @development-tools
-dnf install -y tmux neovim emacs chromium zsh 
+dnf install -y tmux neovim emacs chromium zsh xiphos thunderbird 
 dnf install -y distrobox  usbguard usbguard-notifier setroubleshoot setools fscrypt neovim pam-u2f flatpak
 dnf install -y pam_yubico pamu2fcfg yubikey-manager google-noto-fonts-all headsetcontrol gnome-text-editor evince audacious
 dnf swap -y ffmpeg-free ffmpeg --allowerasing
@@ -34,7 +34,7 @@ dnf swap -y mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 dnf install -y rpmfusion-free-release-tainted
 dnf install -y libdvdcss
 #### Example for enabling a System Unit File
-flatpak install --system -y flathub org.mozilla.firefox org.gnome.Loupe org.signal.Signal com.discordapp.Discord im.riot.Riot  org.telegram.desktop  org.libreoffice.LibreOffice  com.github.tchx84.Flatseal  com.mattjakeman.ExtensionManager 
-flatpak install --system -y com.usebottles.bottles  net.lutris.Lutris  io.github.dvlv.boxbuddyrs org.gnome.Evolution org.telegram.desktop org.videolan.VLC io.mpv.Mpv org.atheme.audacious org.gnome.Builder com.visualstudio.code 
-flatpak install --system -y org.xiphos.Xiphos org.mozilla.Thunderbird 
+#flatpak install --system -y flathub org.mozilla.firefox org.gnome.Loupe org.signal.Signal com.discordapp.Discord im.riot.Riot  org.telegram.desktop  org.libreoffice.LibreOffice  com.github.tchx84.Flatseal  com.mattjakeman.ExtensionManager 
+#flatpak install --system -y com.usebottles.bottles  net.lutris.Lutris  io.github.dvlv.boxbuddyrs org.gnome.Evolution org.telegram.desktop org.videolan.VLC io.mpv.Mpv org.atheme.audacious org.gnome.Builder com.visualstudio.code 
+#flatpak install --system -y org.xiphos.Xiphos org.mozilla.Thunderbird 
 systemctl enable podman.socket
