@@ -21,7 +21,7 @@ dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-
 dnf install -y @virtualization
 dnf install -y @development-tools
 dnf install -y tmux neovim emacs chromium zsh 
-dnf install -y distrobox  usbguard usbguard-notifier setroubleshoot setools fscrypt neovim pam-u2f flatpack
+dnf install -y distrobox  usbguard usbguard-notifier setroubleshoot setools fscrypt neovim pam-u2f flatpak
 dnf install -y pam_yubico pamu2fcfg yubikey-manager google-noto-fonts-all headsetcontrol gnome-text-editor evince firefox vlc mpv audacious audacious-plugins
 dnf swap -y ffmpeg-free ffmpeg --allowerasing
 dnf install -y intel-media-driver
