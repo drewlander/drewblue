@@ -22,8 +22,14 @@ dnf install -y @virtualization
 dnf install -y @development-tools
 dnf install -y tmux neovim emacs chromium zsh 
 dnf install -y distrobox  usbguard usbguard-notifier setroubleshoot setools fscrypt neovim pam-u2f 
-dnf install -y pam_yubico pamu2fcfg yubikey-manager google-noto-fonts-all headsetcontrol gnome-text-editor evince firefox
-
+dnf install -y pam_yubico pamu2fcfg yubikey-manager google-noto-fonts-all headsetcontrol gnome-text-editor evince firefox vlc mpv audacious audacious-plugins
+dnf swap -y ffmpeg-free ffmpeg --allowerasing
+dnf update -y @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+dnf install -y intel-media-driver
+dnf swap -y mesa-va-drivers mesa-va-drivers-freeworld
+dnf swap -y mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
+dnf install -y rpmfusion-free-release-tainted
+dnf install -y libdvdcss
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
