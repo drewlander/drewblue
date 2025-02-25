@@ -34,7 +34,7 @@ dnf swap -y mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
 dnf install -y rpmfusion-free-release-tainted
 dnf install -y libdvdcss
 #### Example for enabling a System Unit File
-#flatpak install --system -y flathub org.mozilla.firefox org.gnome.Loupe org.signal.Signal com.discordapp.Discord im.riot.Riot  org.telegram.desktop  org.libreoffice.LibreOffice  com.github.tchx84.Flatseal  com.mattjakeman.ExtensionManager 
+flatpak install --system -y flathub org.mozilla.firefox org.gnome.Loupe org.signal.Signal com.discordapp.Discord im.riot.Riot  org.telegram.desktop  org.libreoffice.LibreOffice  com.github.tchx84.Flatseal  com.mattjakeman.ExtensionManager 
 #flatpak install --system -y com.usebottles.bottles  net.lutris.Lutris  io.github.dvlv.boxbuddyrs org.gnome.Evolution org.telegram.desktop org.videolan.VLC io.mpv.Mpv org.atheme.audacious org.gnome.Builder com.visualstudio.code 
 #flatpak install --system -y org.xiphos.Xiphos org.mozilla.Thunderbird 
 systemctl enable podman.socket
