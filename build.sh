@@ -28,7 +28,7 @@ dnf install -y hipblas-devel hipblaslt-devel hipcc hipcub-devel hipfft-devel hip
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 dnf install -y @virtualization
 dnf install -y @development-tools
-dnf install -y tmux neovim emacs chromium zsh xiphos thunderbird 
+dnf install -y tmux neovim emacs chromium zsh xiphos thunderbird libreoffice
 dnf install -y distrobox  usbguard usbguard-notifier setroubleshoot setools fscrypt neovim pam-u2f flatpak
 dnf install -y pam_yubico pamu2fcfg yubikey-manager google-noto-fonts-all headsetcontrol gnome-text-editor evince audacious
 dnf swap -y ffmpeg-free ffmpeg --allowerasing
