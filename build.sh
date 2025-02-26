@@ -17,7 +17,7 @@ RELEASE="$(rpm -E %fedora)"
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
-#dnf remove -y firefox
+dnf remove -y firefox
 dnf config-manager -y addrepo --from-repofile=https://repository.mullvad.net/rpm/stable/mullvad.repo
 dnf install -y mullvad-browser
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
