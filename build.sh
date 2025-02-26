@@ -17,7 +17,7 @@ RELEASE="$(rpm -E %fedora)"
 
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
-dnf remove -y firefox
+#dnf remove -y firefox
 dnf config-manager -y addrepo --from-repofile=https://repository.mullvad.net/rpm/stable/mullvad.repo
 dnf install -y mullvad-browser
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -35,7 +35,7 @@ dnf install -y rpmfusion-free-release-tainted
 dnf install -y libdvdcss
 #### Example for enabling a System Unit File
 
-flatpak install --system -y org.mozilla.firefox org.gnome.Loupe org.signal.Signal com.discordapp.Discord im.riot.Riot  org.telegram.desktop  org.libreoffice.LibreOffice  com.github.tchx84.Flatseal  com.mattjakeman.ExtensionManager 
+#flatpak install --system -y org.mozilla.firefox org.gnome.Loupe org.signal.Signal com.discordapp.Discord im.riot.Riot  org.telegram.desktop  org.libreoffice.LibreOffice  com.github.tchx84.Flatseal  com.mattjakeman.ExtensionManager 
 #flatpak install --system -y com.usebottles.bottles  net.lutris.Lutris  io.github.dvlv.boxbuddyrs org.gnome.Evolution org.telegram.desktop org.videolan.VLC io.mpv.Mpv org.atheme.audacious org.gnome.Builder com.visualstudio.code 
 #flatpak install --system -y org.xiphos.Xiphos org.mozilla.Thunderbird 
 systemctl enable podman.socket
