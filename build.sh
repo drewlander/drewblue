@@ -29,13 +29,8 @@ dnf install -y @virtualization
 dnf install -y @development-tools
 dnf install -y tmux neovim emacs chromium zsh xiphos thunderbird libreoffice tailscale
 dnf install -y distrobox  usbguard usbguard-notifier setroubleshoot setools fscrypt neovim pam-u2f flatpak
-dnf install -y pam_yubico pamu2fcfg yubikey-manager google-noto-fonts-all headsetcontrol gnome-text-editor evince audacious
-dnf swap -y ffmpeg-free ffmpeg --allowerasing
-dnf install -y intel-media-driver
-dnf swap -y mesa-va-drivers mesa-va-drivers-freeworld
-dnf swap -y mesa-vdpau-drivers mesa-vdpau-drivers-freeworld
-dnf install -y rpmfusion-free-release-tainted
-dnf install -y libdvdcss
+dnf install -y pam_yubico pamu2fcfg yubikey-manager  headsetcontrol gnome-text-editor evince 
+
 #### Example for enabling a System Unit File
 
 #flatpak install --system -y org.mozilla.firefox org.gnome.Loupe org.signal.Signal com.discordapp.Discord im.riot.Riot  org.telegram.desktop  org.libreoffice.LibreOffice  com.github.tchx84.Flatseal  com.mattjakeman.ExtensionManager 
